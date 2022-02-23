@@ -10,7 +10,7 @@ export class navbar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container justify-content-center">
-            <a className="navbar-brand" href="/">
+            <a className="navbar-brand" href="/Update-DailyNewsApp/">
               <h2>Update</h2>
             </a>
             <button

@@ -1,5 +1,6 @@
 {
-  "name": "https://khaleequllah.github.io/Update-DailyNewsApp",
+  "homepage": "https://khaleequllah.github.io/Update-DailyNewsApp",
+  "name": "reacttut2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
