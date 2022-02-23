@@ -34,7 +34,7 @@ export class NewsItem extends Component {
                 {new Date(date).toGMTString()}
               </small>
             </p>
-            <a href={newsurl} className="btn btn-sm btn-dark">
+            <a href={newsurl} target="_blank" className="btn btn-sm btn-dark">
               Read More
             </a>
           </div>

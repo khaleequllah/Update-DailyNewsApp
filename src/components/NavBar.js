@@ -9,8 +9,8 @@ export class navbar extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div className="container justify-content-center">
-            <a className="navbar-brand" href="/Update-DailyNewsApp/">
+          <div className="container-fluid mx-4">
+            <a className="navbar-brand" href="/">
               <h2>Update</h2>
             </a>
             <button
@@ -24,24 +24,10 @@ export class navbar extends Component {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-          </div>
-        </nav>{" "}
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
-          <div className="container-fluid">
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
             <div
-              className="collapse navbar-collapse justify-content-center "
+              className="collapse navbar-collapse mx-3 "
               id="navbarSupportedContent"
+              style={{ marigin: "20px" }}
             >
               <ul className="navbar-nav mb-2 mb-lg-0 ">
                 <li className="nav-item active">
