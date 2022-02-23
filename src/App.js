@@ -13,7 +13,7 @@ export default class App extends Component {
           <NavBar />
           <Routes>
             <Route
-              path="/"
+              path="//Update-DailyNewsApp/"
               element={
                 <News
                   key="general"
