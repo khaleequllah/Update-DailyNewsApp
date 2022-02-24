@@ -35,7 +35,7 @@ export class News extends Component {
 
   async updateNews() {
     this.props.setProgress(0);
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=a7b17148686f465d86d6a3ffff6ddb35&page=${this.state.page}&pagesize=${this.props.pageSize}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.state.apiKey}&page=${this.state.page}&pagesize=${this.props.pageSize}`;
     this.setState({ loading: true });
     this.props.setProgress(30);
     let data = await fetch(url);

@@ -27,7 +27,6 @@ export class navbar extends Component {
             <div
               className="collapse navbar-collapse mx-3 "
               id="navbarSupportedContent"
-              style={{ marigin: "20px" }}
             >
               <ul className="navbar-nav mb-2 mb-lg-0 ">
                 <li className="nav-item active">
