@@ -7,7 +7,7 @@ export class NewsItem extends Component {
       this.props;
 
     return (
-      <div class="card-deck">
+      <div className="card">
         <div className="card" id="rcorners4">
           <span
             className="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-success"

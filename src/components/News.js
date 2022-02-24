@@ -35,7 +35,7 @@ export class News extends Component {
 
   async updateNews() {
     this.props.setProgress(0);
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.state.apiKey}&page=${this.state.page}&pagesize=${this.props.pageSize}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pagesize=${this.props.pageSize}`;
     this.setState({ loading: true });
     this.props.setProgress(30);
     let data = await fetch(url);
@@ -63,9 +63,8 @@ export class News extends Component {
   //   this.updateNews();
   // };
   fetchMoreData = async () => {
-    // a fake async api call like which sends
-    // 20 more records in 1.5 secs
     this.setState({ page: this.state.page + 1 });
+    // for adding API create an .env.local file in UPDATE-DAILYNEWSAPP folder
     const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pagesize=${this.props.pageSize}`;
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -109,6 +108,7 @@ export class News extends Component {
             </div>
           </div>
         </InfiniteScroll>
+
         {/* <div className="d-flex justify-content-between">
           <button
             disabled={this.state.page <= 1}
